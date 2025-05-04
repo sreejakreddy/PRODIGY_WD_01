@@ -1,22 +1,27 @@
+/* Global Styles */
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.5;
+  background-color: #fdfefe;
+  color: #333;
 }
 
+/* Navigation Bar */
 nav#navbar {
   position: fixed;
   width: 100%;
   top: 0;
-  background-color: #333;
-  padding: 10px 0;
+  background-color: #a2d5f2; /* pastel blue */
+  padding: 8px 0;
   z-index: 1000;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
 }
 
 nav#navbar.scrolled {
-  background-color: #555;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  background-color: #89c2d9; /* slightly deeper pastel blue */
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
 }
 
 nav ul {
@@ -28,28 +33,36 @@ nav ul {
 }
 
 nav ul li {
-  margin: 0 20px;
+  margin: 0 12px;
 }
 
 nav ul li a {
-  color: white;
+  color: #ffffff;
   text-decoration: none;
-  padding: 8px 15px;
-  transition: background-color 0.3s, color 0.3s;
+  padding: 6px 14px;
+  font-size: 16px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  background-color: transparent;
 }
 
 nav ul li a:hover {
-  background-color: #fff;
-  color: #333;
-  border-radius: 5px;
+  background-color: #fcefee; /* pastel pink background */
+  color: #5c5c5c;
+  font-weight: 500;
 }
 
-/* Content for demonstration */
+/* Page Content */
 .content {
-  padding-top: 70px;
+  padding-top: 60px;
 }
 
 section {
-  padding: 100px 20px;
+  padding: 60px 20px;
   border-bottom: 1px solid #ddd;
+  background-color: #fafafa;
+}
+
+section:nth-child(even) {
+  background-color: #f0f7f4; /* pastel green tint */
 }
